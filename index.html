@@ -10,11 +10,34 @@
         text-align: center;
         font-size: 4vw;
     }
+    .iteam{
+        border: 4px double black;
+        margin: 1vh 0px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(214, 201, 201);
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        height: 4vh;
+        width: 4vw;
+      background-color: brown;  
+      border: none;
+      padding: 2px;
+      border-radius: 10px;
+      color: aliceblue;
+      cursor: pointer;
+
+    }
 </style>
 <body>
     <h1>Notes app</h1>
-    <div class="notes-continer">
-
+    <input type="text" id="notes-input" placeholder="enter a notes">
+    <button type="button" class="btn-submit-notes" onclick="addnoties()">Add Notes</button>
+    <div id="notes-continer">
+       
+     
     </div>
     <script src="index.js"></script>
 </body>
