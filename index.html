@@ -6,10 +6,23 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        background-color: rgb(104, 85, 85);
+    }
     h1{
         text-align: center;
         font-size: 4vw;
+        color: white;
     }
+
+    #notes-continer{
+        margin-top: 5vh;
+        height: 60vh;
+        overflow-y: scroll;
+
+     }
+
+
     .iteam{
         border: 4px double black;
         margin: 1vh 0px;
@@ -30,10 +43,29 @@
       cursor: pointer;
 
     }
+    #notes-input{
+        height: 5vh;
+        width: 20vw;
+        border-radius: 10px;
+        padding: 5px;
+        border: none;
+        box-shadow: 2px 2px 8px rgb(190, 186, 186);
+    }
+
+    .btn-submit-notes{
+        height: 5vh;
+        width: 8vw;
+        margin-left: 20px;
+        background-color: blueviolet;
+        color: rgb(216, 203, 203);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 </style>
 <body>
     <h1>Notes app</h1>
-    <input type="text" id="notes-input" placeholder="enter a notes">
+    <input type="text" id="notes-input" placeholder="Enter a notes">
     <button type="button" class="btn-submit-notes" onclick="addnoties()">Add Notes</button>
     <div id="notes-continer">
        
